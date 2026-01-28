@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Splitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Expense Splitter</h1>
+
+  <section class="card">
+    <h2>Create Group</h2>
+    <input type="text" id="memberInput" placeholder="Enter member name">
+    <button id="addMemberBtn">Add Member</button>
+
+    <ul id="memberList"></ul>
+  </section>
+
+  <section class="card">
+    <h2></h2>
+
+    <input type="text" id="expenseName" placeholder="Expense name">
+    <br>
+    <input type="number" id="expenseAmount" placeholder="Amount">
+
+    <label>Paid by:</label>
+    <select id="paidBy"></select>
+
+    <label>Involved members:</label>
+    <div id="involvedMembers"></div>
+
+    <button id="addExpenseBtn">Add Expense</button>
+  </section>
+
+  <section class="card">
+    <h2>Summary</h2>
+    <div id="summary"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
